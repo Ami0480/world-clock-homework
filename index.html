@@ -3,26 +3,39 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Document</title>
   </head>
   <body>
-    <h1>World Clock</h1>
-    <select>
-      <option value="">Select a city..</option>
-      <option value="">Perth</option>
-      <option value="">Himeji</option>
-      <option value="">Kuala Lumpur</option>
-    </select>
-
-    <h2>London</h2>
-    <div class="date">January 15th 2025</div>
-    <div class="time">3:30:25 PM</div>
-
+    <div class="container">
+      <h1>World Clock</h1>
+      <select>
+        <option value="">Select a city..</option>
+        <option value="">Perth</option>
+        <option value="">Himeji</option>
+        <option value="">Kuala Lumpur</option>
+      </select>
+      <div class="city">
+        <div>
+          <h2>London</h2>
+          <div class="date">January 15th 2025</div>
+        </div>
+        <div class="time">3:30:25<small> PM</small></div>
+      </div>
+      <div class="city">
+        <div>
+          <h2>New-York</h2>
+          <div class="date">January 15th 2025</div>
+        </div>
+        <div class="time">3:30:25<small> PM</small></div>
+      </div>
+    </div>
     <footer>
-      This project was coded 🍎 by Ami Fukuyama and is
+      This project was coded 🍎 by <strong>Ami Fukuyama</strong> and is
       <a href="https://github.com/Ami0480/world-clock-homework" target="_blank"
         >open source on GitHub</a
       >.
     </footer>
+    <script src="js/index.js"></script>
   </body>
 </html>
