@@ -4,32 +4,39 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.46/moment-timezone-with-data-1970-2030.js"></script>
+    <title>World Clock Homework</title>
   </head>
   <body>
     <div class="container">
       <h1>World Clock</h1>
-      <select>
+      <select id="city">
         <option value="">Select a city..</option>
-        <option value="">Perth</option>
-        <option value="">Himeji</option>
-        <option value="">Kuala Lumpur</option>
+        <option value="Australia/Perth">Perth</option>
+        <option value="Asia/Himeji">Himeji</option>
+        <option value="Asia/Kuala_Lumpur">Kuala Lumpur</option>
+        <option value="Europe/London">London</option>
       </select>
-      <div class="city">
-        <div>
-          <h2>London</h2>
-          <div class="date">January 15th 2025</div>
+
+      <div id="cities">
+        <div class="city" id="london">
+          <div>
+            <h2>London</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"><small> </small></div>
         </div>
-        <div class="time">3:30:25<small> PM</small></div>
-      </div>
-      <div class="city">
-        <div>
-          <h2>New-York</h2>
-          <div class="date">January 15th 2025</div>
+        <div class="city" id="new-york">
+          <div>
+            <h2>New-York</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"><small> </small></div>
         </div>
-        <div class="time">3:30:25<small> PM</small></div>
       </div>
     </div>
+
     <footer>
       This project was coded 🍎 by <strong>Ami Fukuyama</strong> and is
       <a href="https://github.com/Ami0480/world-clock-homework" target="_blank"
